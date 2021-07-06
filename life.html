@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Podcasts.io Life</title>
+    <!-- tell the browser to support all unicode characters -->
+    <meta charset="utf-8" />
+    <!-- tell mobile browsers not to zoom in automatically -->
+    <meta name="viewport" content="initial-scale=1" />
+    <!-- import css, including bootstrap's first -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <!-- import js, including bootstrap's first -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </head>
+  <body class="bg-white text-dark">
+    <div class="container">
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-dark"
+        style="background-color: gray"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="professional_site.html">Podcasts.io</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="mind.html">Mind</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="wellness.html">Wellness</a>
+                  </li>
+                  <li><a class="dropdown-item" href="life.html">Life</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary button1"
+                  data-bs-toggle="tooltip"
+                  title="Click to change."
+                  data-bs-placement="right"
+                >
+                  Toggles on/off Dark Mode
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="text-center display-1 life">Life Podcasts</h1>
+
+      <br />
+      <h4 class="text-center">
+        <strong>To enjoy the short life we have. </strong>Listen to general
+        lessons regarding your livelihood with these podcasts.
+      </h4>
+
+      <br />
+      <h6 class="text-center">Some recommendations below:</h6>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              href="https://open.spotify.com/show/0nMF1JL5tNJW7B0teIFWxV?si=Ozy6_0teRFqXoqQz-HuFfw&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+              ><img src="images/oprah.png" class="d-block w-40" alt="..."
+            /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/show/7irxBvxNqGYnUdFo1c2gMc?si=klXRNUWST7-FC4SvE6Yt5g&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+            >
+              <img src="images/jocko.png" class="d-block w-40" alt="..." />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/show/1nARKz2vTIOb7gC9dusE4b?si=xYYrHfzUSx6aYMWyA4NBpg&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+            >
+              <img src="images/tom.png" class="d-block w-40" alt="..."
+            /></a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/show/5EqqB52m2bsr4k1Ii7sStc?si=UWCcvJ5jQp2ePmJGrGi-bQ&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+            >
+              <img src="images/jay.png" class="d-block w-40" alt="..."
+            /></a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6 border border-secondary rounded">
+          <h1 class="text-center display-4">
+            How can Podcasts improve your life?
+          </h1>
+          <p class="text-center">
+            Podcasts are just another form of dialouge that comes easy to
+            everyone- through audio. It's a no-effort way of consuming media
+            that's healthier than the normal Facebook scrolling or Youtube
+            autoplaying or Netflix binging. It teaches you alot of stuff- if you
+            pick the right podcasts to listen to.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6 border border-secondary rounded">
+          <h1 class="text-center display-4">
+            My personal favorite podcasters:
+          </h1>
+          <p class="text-center">
+            Tom Bilyeu is a rich dude who sold his company Quest Nutrition for
+            alot of money and now interviews just about every famous person on
+            Earth. As a result, his podcasts has one of the highest variety of
+            guests and there's honestly nothing you can't find on his podcast. I
+            love Oprah because she interviews everyone as well and also has a
+            strong spiritual side to her that has helped me through life in
+            every way. Jocko Willink is an ex-Navy Seal that now has a podcast
+            that talks about hardcore stuff like the aspects of life no one
+            likes. Joe Rogan is Joe Rogan, love him or hate him, he's an
+            influential dude in this world. I love so much other podcasts, I
+            wish I could name them all.
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="card col-sm-12 col-md-6">
+          <div class="card-header">
+            <strong>Life Benefits of Podcasts:</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Learn from others</li>
+            <li class="list-group-item">Open mind and dialouge</li>
+            <li class="list-group-item">Gain spirituality</li>
+          </ul>
+        </div>
+
+        <div class="card col-sm-12 col-md-6">
+          <div class="card-header"><strong>Life Podcasts:</strong></div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Oprah Winfrey</li>
+            <li class="list-group-item">Jocko Willink</li>
+            <li class="list-group-item">Joe Rogan</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <p class="hidden">Glad you like this site. :)</p>
+            <p class="hidden1">Why you hate this site? :(</p>
+
+            <span class="reveal">
+              <button type="button" class="btn btn-success button3">
+                I love this site.
+              </button>
+              <button type="button" class="btn btn-danger button4">
+                I hate this site.
+              </button>
+            </span>
+          </a>
+        </div>
+      </nav>
+
+      <br />
+      <h5 class="text-center">Hope you enjoy some podcasts on this site!</h5>
+      <br />
+    </div>
+  </body>
+</html>

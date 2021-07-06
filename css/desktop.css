@@ -1,0 +1,14 @@
+.container {
+  width: 820px;
+}
+
+.sections {
+  /* max-width: 20%; */
+  float: left;
+  width: 27%;
+  margin: 1px;
+}
+
+h1 {
+  color: green;
+}

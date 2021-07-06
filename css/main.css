@@ -1,0 +1,159 @@
+/* place your CSS code here */
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 20px;
+  margin-top: 5px;
+  max-width: 100%;
+}
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 23px;
+  margin: 4px;
+}
+h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 5px;
+}
+h4 {
+  font-family: Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+a {
+  color: lightseagreen;
+}
+a:link {
+  color: lightseagreen;
+}
+a:visited {
+  color: rgb(107, 44, 54);
+}
+a:hover {
+  color: orangered;
+  background-color: rgb(245, 173, 147);
+}
+a:active {
+  color: aqua;
+}
+
+img {
+  margin: 10px;
+  max-width: 90%;
+}
+.container {
+  /* width: 800px; */
+  margin: 0 auto;
+  border: 3px solid gray;
+  padding: 18px;
+}
+
+.sections {
+  border: 4px solid lightblue;
+  padding: 16px;
+  margin: 12px;
+  margin-bottom: 15px;
+}
+
+ol {
+  list-style-type: none;
+}
+
+section h1 {
+  margin: 0px;
+}
+
+#my_background {
+  background-color: beige;
+}
+
+#my_interests {
+  background-color: lightsteelblue;
+}
+
+section#background h2,
+section#interests h2 {
+  font-size: 35px;
+  margin: 5px;
+}
+
+img#cook {
+}
+
+span#words2 {
+  display: none;
+}
+
+span#clicker {
+  text-decoration: underline;
+  background-color: lightgreen;
+}
+
+.clear {
+  clear: both;
+}
+
+#button,
+#buttontwo,
+#buttonthree {
+  display: block;
+  height: 50px;
+  width: 150px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#spookysoy {
+  display: none;
+  font-size: 40px;
+  margin-top: 1px;
+}
+#chefs {
+  display: none;
+}
+
+#salt {
+  position: absolute;
+  top: 10px;
+  left: -250px;
+}
+
+#garen,
+#annie,
+#talon {
+  display: none;
+}
+
+.form {
+  padding-left: 4px;
+}
+.form:hover {
+  cursor: pointer;
+}
+
+.ued {
+  max-width: 150px;
+  max-height: 210px;
+}
+
+.sitemap {
+  max-width: 700px;
+  width: 100%;
+}
+.wireframes,
+.prototype,
+.site_map {
+  border: 3px solid lightblue;
+  margin: 10px;
+  padding: 6px;
+}
+
+header,
+footer {
+  border: 2px solid lightcyan;
+}

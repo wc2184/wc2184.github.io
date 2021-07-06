@@ -1,0 +1,122 @@
+body {
+  padding-top: 100px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+h1.mind {
+  font-size: 30px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  background: url("/images/mind.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+h1.life {
+  font-size: 30px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  background: url("/images/life.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+h1.wellness {
+  font-size: 30px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  background: url("/images/wellness.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.border {
+  padding: 15px;
+}
+/* .carousel#smol {
+  max-width: 50%;
+  width: 360px;
+  height: 360px;
+} */
+
+/* .carousel#smol img {
+  width: 50%;
+  margin: auto;
+} */
+
+/* #carouselExampleIndicators {
+  margin: 0 auto;
+} */
+
+/* .carousel-inner .item a img {
+  margin: auto;
+} */
+
+.carousel.carousel-dark.slide {
+  width: 320px;
+  height: 270px;
+  margin: 0 auto;
+}
+.carousel.carousel-dark.slide img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.button1 {
+  color: white;
+  padding: 5px;
+}
+
+.button2 {
+  color: rgb(134, 50, 50);
+  padding: 8px;
+}
+
+.button3 {
+  padding: 4px;
+}
+
+.button4 {
+  padding: 4px;
+}
+
+.button5 {
+  padding: 4px;
+  font-size: 14px;
+}
+
+.card img {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.card {
+  padding: 2px;
+}
+
+.hidden,
+.hidden1 {
+  display: none;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.display-4 {
+  font-size: 40px;
+}
+
+h5 {
+  display: inline;
+  font-size: 14px;
+}

@@ -1,0 +1,32 @@
+body {
+  padding-top: 80px;
+}
+
+/* .carousel#smol {
+  max-width: 50%;
+  width: 360px;
+  height: 360px;
+} */
+
+/* .carousel#smol img {
+  width: 50%;
+  margin: auto;
+} */
+
+/* #carouselExampleIndicators {
+  margin: 0 auto;
+} */
+
+/* .carousel-inner .item a img {
+  margin: auto;
+} */
+
+.carousel.carousel-dark.slide {
+  width: 360px;
+  height: 270px;
+  margin: 0 auto;
+}
+.carousel.carousel-dark.slide img {
+  width: 60%;
+  margin: 0 auto;
+}

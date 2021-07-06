@@ -1,0 +1,9 @@
+.container {
+  width: 420px;
+}
+.sections {
+  /* max-width: 20%; */
+  float: left;
+  width: 40%;
+  margin: 1px;
+}

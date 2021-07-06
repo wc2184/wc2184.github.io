@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Podcasts.io Home</title>
+    <!-- tell the browser to support all unicode characters -->
+    <meta charset="utf-8" />
+    <!-- tell mobile browsers not to zoom in automatically -->
+    <meta name="viewport" content="initial-scale=1" />
+    <!-- import css, including bootstrap's first -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <!-- import js, including bootstrap's first -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </head>
+  <body class="text-dark bg-white">
+    <div class="container">
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-dark"
+        style="background-color: gray"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="professional_site.html">Podcasts.io</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="mind.html">Mind</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="wellness.html">Wellness</a>
+                  </li>
+                  <li><a class="dropdown-item" href="life.html">Life</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary button1"
+                  data-bs-toggle="tooltip"
+                  title="Click to change."
+                  data-bs-placement="right"
+                >
+                  Toggles on/off Dark Mode
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="text-center display-1">Welcome to Podcasts.io!</h1>
+
+      <h4 class="text-center">
+        These are some of the most popular podcasts of the year. Enjoy!
+      </h4>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              href="https://open.spotify.com/show/3IM0lmZxpFAY7CwMuv9H4g?si=CKKCnVwdSaKRIOcGO-pNdA&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+              ><img src="images/daily.jpeg" class="d-block w-40" alt="..."
+            /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/show/3oEPsPKDhPVoNNL7pH5db6?si=UotPI2JQQDKNbuDprczmfg&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+            >
+              <img src="images/brene.jpeg" class="d-block w-40" alt="..." />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk?si=JFTmHDKxTg6volejHhbpZw&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+            >
+              <img src="images/joerogan.jpeg" class="d-block w-40" alt="..."
+            /></a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/show/5rgumWEx4FsqIY8e1wJNAk?si=hbzurdO0TVylOsZMYaYD-g&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+            >
+              <img src="images/sam.png" class="d-block w-40" alt="..."
+            /></a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h3 class="text-center">
+        The podcasts <strong>above</strong> are clickable in the carousel!
+      </h3>
+      <h6 class="text-center">
+        (The podcasts <strong>below</strong> are not clickable, sorry, but it is
+        also a carousel!)
+      </h6>
+
+      <br />
+      <!-- this second carousel is to fulfill specs -->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide mb-5 wide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/caro1.png" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="images/caro2.png" class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src="images/caro3.png" class="d-block w-100" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="border border-5 border-warning rounded-pill col-sm-6">
+          <h1 class="text-center display-4">Podcasts.io</h1>
+          <h6 class="text-center">
+            What are you waiting for? Click Categories above to listen to some
+            awesome podcasts!
+          </h6>
+        </div>
+
+        <div
+          class="border border-5 border-info rounded-pill col-sm-6 text-center"
+        >
+          <h1 class="display-4">Special Button Below.</h1>
+          <button
+            type="button"
+            class="btn btn-outline-secondary button2"
+            data-bs-toggle="tooltip"
+            title="Feeling Lucky?"
+            data-bs-placement="bottom"
+            onclick="javascript: openLink()"
+          >
+            Random Podcast
+          </button>
+        </div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div
+          class="card col-lg-4 col-md-6 col-sm-12 text-white bg-secondary mb-3"
+        >
+          <img src="images/spotify.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Spotify</h5>
+            <p class="card-text">
+              Spotify is the world's leading platform for podcast listening.
+            </p>
+            <a
+              href="https://www.spotify.com/us/download/windows/"
+              class="btn btn-primary"
+              >Download</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card col-lg-4 col-md-6 col-sm-12 text-white bg-secondary mb-3"
+        >
+          <img src="images/googpod.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Google Podcasts</h5>
+            <p class="card-text">
+              Google is an up and coming podcast platform.
+            </p>
+            <a href="https://podcasts.google.com/" class="btn btn-primary"
+              >Download</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card col-lg-4 col-md-6 col-sm-12 text-white bg-secondary mb-3"
+        >
+          <img src="images/applepod.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Apple Podcasts</h5>
+            <p class="card-text">
+              Apple Podcasts is the native iOS app for podcast listening.
+            </p>
+            <a
+              href="https://apps.apple.com/us/app/apple-podcasts/id525463029"
+              class="btn btn-primary"
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <h5 class="text-center">&copy William Chan 2021</h5>
+            <button
+              type="button"
+              class="btn btn-success button5"
+              data-bs-toggle="tooltip"
+              title="Visit portfolio."
+              data-bs-placement="top"
+            >
+              Web Design Portfolio
+            </button>
+          </a>
+        </div>
+      </nav>
+      <br />
+      <h5 class="text-center">Hope you enjoy some podcasts on this site!</h5>
+      <br />
+    </div>
+  </body>
+</html>

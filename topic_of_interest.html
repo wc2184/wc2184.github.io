@@ -1,0 +1,120 @@
+<!-- place your HTML code here -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Topics of Interest</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/soundjs.min.js"></script></head>
+    <script>
+        var soundID = "League";
+  
+        function loadSound () {
+          createjs.Sound.registerSound("assets/league.mp3", soundID);
+        }
+  
+        function playSound () {
+          createjs.Sound.play(soundID);
+        }
+      </script>
+      <!-- Media query for narrow browser width -->
+    <link
+    rel="stylesheet"
+    media="only screen and (max-width: 480px)"
+    href="css/mobile.css"
+  />
+
+  <!-- Media query for medium browser width -->
+  <link
+    rel="stylesheet"
+    media="only screen and (min-width: 481px) and (max-width: 960px)"
+    href="css/tablet.css"
+  />
+
+  <!-- Media query for full browser width -->
+  <link
+    rel="stylesheet"
+    media="only screen and (min-width: 961px)"
+    href="css/desktop.css"
+  />
+
+  <!-- Prevent smartphones from scaling the page by default -->
+  <meta name="viewport" content="initial-scale=1" />
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      <h1>Topics of Interest</h1>
+    </header>
+      <section class="sections" class="column1">
+        <h2>I have alot of interests. Here are a few of them.</h2>
+      </section>
+      <section class="sections" class="column2">
+        <h2>Cooking</h2>
+        <br />
+        <input
+          type="button"
+          id="buttonthree"
+          value="Salt the food"
+        />
+        <br />
+        <img id="cook" src="images/cook.jpg" />
+        <img id="chefs" src="images/chefsquad.jpg" />
+        <img id="salt" src="images/salt.jpg" />
+
+        <p id="spookysoy">Spooky Soylent has arrived!</p>
+        <h2>
+        <span id="words1">These words will change.</span>
+        <span id="words2">They changed.</span>
+        <span id="clicker">Click me to see. Click to change back</span>
+
+        </h2>
+
+        <p>
+          I love cooking. I really do. Hover over the food above to see a
+          'cursed' version of food and a cool changed background. Click the
+          button below to see some of my friends.
+        </p>
+        <input
+          type="button"
+          id="button"
+          value="Click me to see my gang! No turning back after you press it."
+        />
+      </section>
+      <section class="sections" class="column3">
+        <h2>Playing League of Legends</h2>
+        <br />
+        <img id="garen" src="images/garen.png" />
+        <img id="annie" src="images/annie.png" />
+        <img id="talon" src="images/talon.png" />
+
+        <input
+          type="button"
+          id="buttontwo"
+          value="Click me to see my LOL characters."
+        />
+      </section>
+      <section class="sections">
+          <h2>Extra Credit Third Party JS Library! Listen to Music!</h2>
+          <br />
+        <body onload="loadSound();">
+            <button onclick="playSound();" class="playSound">Play League of Legend Music!</button>
+          <p>If music doesn't play in 1 second, press it again.</p></body>
+      </section>
+      <section class="sections">
+        <h3>Navigation Links</h3>
+        <nav class="navs">
+          
+          <a href="index.html">Return to homepage.</a>
+        </nav>
+      </section>
+      <div class="clear"></div>
+      <footer>Footer for project specs fulfillment**</footer>
+
+    </div>
+    
+  </body>
+</html>

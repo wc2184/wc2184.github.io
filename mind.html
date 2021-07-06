@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Podcasts.io Mind</title>
+    <!-- tell the browser to support all unicode characters -->
+    <meta charset="utf-8" />
+    <!-- tell mobile browsers not to zoom in automatically -->
+    <meta name="viewport" content="initial-scale=1" />
+    <!-- import css, including bootstrap's first -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <!-- import js, including bootstrap's first -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </head>
+  <body class="bg-white text-dark">
+    <div class="container">
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-dark"
+        style="background-color: gray"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="professional_site.html">Podcasts.io</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="mind.html">Mind</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="wellness.html">Wellness</a>
+                  </li>
+                  <li><a class="dropdown-item" href="life.html">Life</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary button1"
+                  data-bs-toggle="tooltip"
+                  title="Click to change."
+                  data-bs-placement="right"
+                >
+                  Toggles on/off Dark Mode
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h1 class="text-center display-1 mind">Mind Podcasts</h1>
+
+      <br />
+      <h4 class="text-center">
+        <strong>For the intellectual side of yourself.</strong> Learn more,
+        think more, become smarter with these podcasts.
+      </h4>
+      <br />
+      <h6 class="text-center">Some recommendations below:</h6>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              href="https://open.spotify.com/show/0ofXAdFIQQRsCYj9754UFx?si=pFbKiX15TuqFU9PqpPsIRw&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+              ><img src="images/sysk.png" class="d-block w-40" alt="..."
+            /></a>
+          </div>
+
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/show/2rTT1klKUoQNuaW2Ah19Pa?si=RU4R29x9RQ-59sVmKxAvhQ&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+            >
+              <img src="images/shortwave.png" class="d-block w-40" alt="..." />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/show/3qv8BS1HzrgKpDnXSlYWWL?si=FivDen5QSB6CfX91KHET0Q&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+            >
+              <img src="images/eric.png" class="d-block w-40" alt="..."
+            /></a>
+          </div>
+          <div class="carousel-item">
+            <a
+              href="https://open.spotify.com/show/5rgumWEx4FsqIY8e1wJNAk?si=hbzurdO0TVylOsZMYaYD-g&dl_branch=1"
+              data-bs-toggle="tooltip"
+              title="Click to open on the Spotify app!"
+              data-bs-placement="bottom"
+            >
+              <img src="images/sam.png" class="d-block w-40" alt="..."
+            /></a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6 border border-secondary rounded">
+          <h1 class="text-center display-4">
+            How can Podcasts improve your mind?
+          </h1>
+          <p class="text-center">
+            It's simple. You obtain massive amounts of wisdom from other people.
+            You effectively save yourself from doing the hard work, and let
+            people research things for you at no personal cost to yourself. It's
+            awesome. You gain knowledge with less effort as well- you can listen
+            to a podcast while doing chores, napping, working, or even playing
+            games. It's great to be living in a time where you can listen to
+            some of the smartest people on Earth speak at the hands of your
+            computer or mobile phone.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6 border border-secondary rounded">
+          <h1 class="text-center display-4">
+            My personal favorite podcasters:
+          </h1>
+          <p class="text-center">
+            I really love listening to people all over the political spectrum.
+            Though I stand heavily progressive, it's still interesting to hear
+            dialouge from all sides of the aisle. Because "Mind" podcasts don't
+            necessarily have to involve politics, I often ignore the political
+            sides of guests and focus on the intellectual aspects instead,
+            skipping entire episodes if I have to in order to avoid the
+            politics. I listen to alot of Naval Ravikant, Lex Fridman, Sam
+            Harris, Joe Rogan, and many others.
+          </p>
+        </div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="card col-sm-12 col-md-6">
+          <div class="card-header">
+            <strong>Mental Benefits of Podcasts:</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Learn more</li>
+            <li class="list-group-item">Easy no-effort learning</li>
+            <li class="list-group-item">More productive</li>
+          </ul>
+        </div>
+
+        <div class="card col-sm-12 col-md-6">
+          <div class="card-header"><strong>Mental Podcasts:</strong></div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Naval Ravikant</li>
+            <li class="list-group-item">Sam Harris</li>
+            <li class="list-group-item">Eric Weinstein</li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <p class="hidden">Glad you like this site. :)</p>
+            <p class="hidden1">Why you hate this site? :(</p>
+
+            <span class="reveal">
+              <button type="button" class="btn btn-success button3">
+                I love this site.
+              </button>
+              <button type="button" class="btn btn-danger button4">
+                I hate this site.
+              </button>
+            </span>
+          </a>
+        </div>
+      </nav>
+
+      <br />
+      <h5 class="text-center">Hope you enjoy some podcasts on this site!</h5>
+      <br />
+    </div>
+  </body>
+</html>
