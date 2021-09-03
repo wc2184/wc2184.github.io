@@ -55,7 +55,9 @@ $(function () {
   // add any custom Javascript code above this line.
   //start here
 
-  document.getElementById("cliky").onclick = function () {
+  document.getElementById("cliky").onclick = nextt;
+
+  function nextt() {
     var name = document.getElementById("name").value;
 
     if (name == "") {
@@ -75,7 +77,7 @@ $(function () {
 
       $("#dategot").html(d + " " + m + " " + y);
     }
-  };
+  }
   document.getElementById("cliky2").onclick = function () {
     $(".containerp").hide();
     $(".hack").show();
@@ -88,5 +90,13 @@ $(function () {
     d = n.getDate();
 
     $("#dategot").html(d + " " + m + " " + y);
+
+    document.onkeydown = logKey;
   };
+
+  document.addEventListener("keyup", function (event) {
+    if (event.code === "Enter") {
+      nextt();
+    }
+  });
 });
