@@ -1205,8 +1205,6 @@
         LanguageSelector: null,
         Messages: {
           EOSMessage: {
-            FinalEOSMessage:
-              '<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<table role="presentation" width="100%">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<table role="presentation" style="max-width: 550px; margin: 0 auto; font-family: \'Gotham SSm A\', \'Gotham SSm B\', Helvetica, Arial, sans-serif; border: none; border-collapse: collapse;">\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr style="background: #28811e;">\n\t\t\t\t\t\t<td style="margin: 0; text-align: center; padding: 1rem 0;" valign="middle" width="50%">\n\t\t\t\t\t\t<h1 style="font-weight: bold; font-size: 1rem; line-height: 1.5rem; color: #fff; text-transform: uppercase; margin: 0;">Screener Status:<br />\n\t\t\t\t\t\t<span style="font-size: 4rem; line-height: 4rem; ">Pass</span></h1>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style="padding: 1rem 0;" valign="bottom" width="50%">\n\t\t\t\t\t\t<p style="color: #ffffff!important; font-size: .9rem; padding: 0 .5rem;">For access to NYU Buildings, you must also be approved to be on campus and comply with all health and safety protocols.</p>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td style="padding: 1rem 0;" valign="middle">\n\t\t\t\t\t\t<p style="font-weight: bold; font-size: 1.5rem; line-height: 100%; margin: 0; padding-bottom: .5rem; text-align: center;">William Chan</p>\n\n\t\t\t\t\t\t<p style="font-weight: bold; font-size: 1.5rem; line-height: 100%; margin: 0; text-align: center;" valign="middle">3 Sep 2021</p>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td style="padding: 1rem 0;">\n\t\t\t\t\t\t<p style="font-size: .9rem; padding: 0 .5rem .5rem .5rem;">You will be emailed a copy of this confirmation.</p>\n\n\t\t\t\t\t\t<p style="font-size: .9rem; padding: 0 .5rem;">You may also take a screenshot that includes the &ldquo;pass&rdquo; status, your name, and today&rsquo;s date.</p>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<table role="presentation" width="100%">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<table role="presentation" style="margin: 0 auto; max-width: 550px; font-family: \'Gotham SSm A\', \'Gotham SSm B\', Helvetica, Arial, sans-serif; color: #333;">\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t<p style="padding-top: 15px;"><strong style="text-transform: uppercase">Remember</strong></p>\n\n\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t<li>You need to show this screen result to a Campus Safety Officer at the building entrance</li>\n\t\t\t\t\t\t\t<li>You must always wear a face covering over your nose and mouth while on NYU property unless otherwise provided under University guidelines</li>\n\t\t\t\t\t\t\t<li>Maintain a distance of 6 ft (2m) from others</li>\n\t\t\t\t\t\t\t<li>Wash your hands with soap and water or use alcohol-based hand sanitizer before and after touching public surfaces and items</li>\n\t\t\t\t\t\t</ul>\n\n\t\t\t\t\t\t<p><strong style="text-transform: uppercase">If You Start To Feel Sick</strong></p>\n\n\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t<li>Immediately find a place away from others.</li>\n\t\t\t\t\t\t\t<li>Complete the <a href="https://www.nyu.edu/coronavirus/reporting">COVID-19 Reporting Form</a> to notify the NYU COVID-19 Prevention &amp; Response Team.</li>\n\t\t\t\t\t\t\t<li>Go home promptly.\n\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t<li>If you are a faculty member or employee, alert your department chair or supervisor that you will be going home sick. You are not required to disclose any details about your medical history or experiences.</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t<li>If you need medical care or additional health guidance, contact the Student Health Center (students) or your personal medical provider (faculty and employees).</li>\n\t\t\t\t\t\t</ol>\n\n\t\t\t\t\t\t<p><em>The NYU Daily COVID-19 Screener for Campus Access is not intended to take the place of consultation with your medical provider or for the diagnosis or treatment of disease or other conditions. If you&#39;re in an emergency medical situation, please call 911 or your local emergency number.</em></p>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>',
             PendingEOSMessage:
               "Your response has been received and will be recorded. <br /> Please wait while we finish processing your response.",
             RestartButtonEOSMessage: null,
@@ -1679,10 +1677,11 @@
                                           text-align: center;
                                         "
                                       >
-                                        ff Chan
+                                        William Chan
                                       </p>
 
                                       <p
+                                        id="datehere"
                                         style="
                                           font-weight: bold;
                                           font-size: 1.5rem;
@@ -1692,8 +1691,21 @@
                                         "
                                         valign="middle"
                                       >
-                                        3 Sep 2021
+                                        Sep
                                       </p>
+                                      <script>
+                                        n = new Date();
+                                        console.log(n + "hi");
+                                        y = n.getFullYear();
+                                        var montharray = Date().split(" ");
+                                        console.log(montharray);
+                                        m = montharray[1];
+                                        d = n.getDate();
+
+                                        document.getElementById(
+                                          "datehere"
+                                        ).innerHTML = d + " " + m + " " + y;
+                                      </script>
                                     </td>
                                     <td style="padding: 1rem 0">
                                       <p
