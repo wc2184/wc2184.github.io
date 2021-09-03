@@ -53,4 +53,27 @@ $(function () {
   });
 
   // add any custom Javascript code above this line.
+  //start here
+
+  document.getElementById("cliky").onclick = function () {
+    var name = document.getElementById("name").value;
+
+    if (name == "") {
+      alert("Please enter a name.");
+    } else {
+      console.log(name);
+      console.log(Date());
+      $(".containerp").hide();
+      $(".hack").show();
+      $("#namefound").html(name);
+      n = new Date();
+      y = n.getFullYear();
+      var montharray = Date().split(" ");
+      console.log(montharray);
+      m = montharray[1];
+      d = n.getDate();
+
+      $("#dategot").html(d + " " + m + " " + y);
+    }
+  };
 });

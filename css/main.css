@@ -83,9 +83,6 @@ section#interests h2 {
   margin: 5px;
 }
 
-img#cook {
-}
-
 span#words2 {
   display: none;
 }
@@ -155,5 +152,30 @@ span#clicker {
 
 header,
 footer {
-  border: 2px solid lightcyan;
+}
+
+body.topmarg {
+  padding-top: 10%;
+}
+#texttemp {
+  font-size: large;
+  text-align: center;
+}
+.containerp {
+  max-width: 300px;
+  margin: auto;
+}
+
+#name {
+  display: block;
+  margin: auto;
+}
+
+#formm {
+  text-align: center;
+  border: 1px;
+}
+
+.hack {
+  display: none;
 }
