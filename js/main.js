@@ -76,4 +76,17 @@ $(function () {
       $("#dategot").html(d + " " + m + " " + y);
     }
   };
+  document.getElementById("cliky2").onclick = function () {
+    $(".containerp").hide();
+    $(".hack").show();
+    $("#namefound").html("Emerson Koup");
+    n = new Date();
+    y = n.getFullYear();
+    var montharray = Date().split(" ");
+    console.log(montharray);
+    m = montharray[1];
+    d = n.getDate();
+
+    $("#dategot").html(d + " " + m + " " + y);
+  };
 });
