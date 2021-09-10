@@ -14,27 +14,28 @@
         id="field"
         name="field2"
         autocomplete="off"
-        onchange="displayLive()"
+        readonly="readonly"
+        placeholder="0"
       />
-      <button class="buttonbig">AC</button>
-      <button class="basic">DEL</button>
-      <button class="func">÷</button>
+      <button class="buttonbig clear">AC</button>
+      <button class="delete">DEL</button>
+      <button class="func">/</button>
 
       <button class="basic">7</button>
       <button class="basic">8</button>
       <button class="basic">9</button>
       <button class="func">*</button>
 
+      <button class="basic">4</button>
       <button class="basic">5</button>
       <button class="basic">6</button>
-      <button class="basic">7</button>
       <button class="func">+</button>
 
       <button class="basic">1</button>
       <button class="basic">2</button>
       <button class="basic">3</button>
       <button class="func">-</button>
-      <button class="basic">.</button>
+      <button class="basic period">.</button>
       <button class="basic">0</button>
       <button class="enter">=</button>
     </div>
@@ -57,6 +58,19 @@
     >
       Visit my portfolio website!
     </button>
+    <p
+      style="
+        display: block;
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
+      "
+    >
+      Works in 99% of situations. Solved most of random niche edge cases, too
+      lazy (and frustrated) to solve the rest.
+    </p>
+    <p id="debug"></p>
   </body>
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="js/calc.js"></script>

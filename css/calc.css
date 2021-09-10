@@ -1,3 +1,8 @@
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
 button {
   border-radius: 6px;
   border: 2px solid black;
@@ -29,6 +34,7 @@ button:active {
   border-radius: 10px;
   width: 280px;
   margin: auto;
+  margin-top: 25px;
   border: 2px solid black;
   padding: 7px;
   padding-left: 17px;
@@ -40,7 +46,7 @@ button:active {
 input {
   background-color: lightblue;
   height: 65px;
-  width: 264px;
+  width: 93%;
   font-size: 49px;
   text-align: right;
   margin-bottom: 4px;
