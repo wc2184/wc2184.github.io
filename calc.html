@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/calc.css" />
-
     <title>Calculator</title>
   </head>
   <body>
+    <audio id="audio" src="assets/click.mp3"></audio>
     <div class="container">
       <input
         type="text"
@@ -17,7 +17,13 @@
         readonly="readonly"
         placeholder="0"
       />
-      <button class="buttonbig clear">AC</button>
+      <button
+        class="buttonbig clear"
+        onclick="  sound.play();
+      "
+      >
+        AC
+      </button>
       <button class="delete">DEL</button>
       <button class="func">/</button>
 
@@ -50,7 +56,8 @@
       Created by William Chan 2021©
     </p>
     <button
-      onclick="window.open('http://wc2184.github.io')"
+      onclick="window.open('http://wc2184.github.io'),   sound.play();
+      "
       ;
       style="
         display: flex;

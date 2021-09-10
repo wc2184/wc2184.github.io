@@ -8,6 +8,7 @@ console.log("Start");
 var equation = "";
 var answer = 0;
 var lastpressed = "";
+var sound = document.getElementById("audio");
 
 //
 // $(".period").click(function () {
@@ -17,6 +18,8 @@ var lastpressed = "";
 // });
 // Basic button press to screen
 $(".basic").click(function () {
+  sound.play();
+
   //if last pressed was 2nd function (solve) or enter, reset the screen
 
   if (lastpressed == "e") {
@@ -72,6 +75,8 @@ $(".basic").click(function () {
 // Which function key is queued up
 var func = "";
 $(".func").click(function () {
+  sound.play();
+
   func = this.innerHTML;
   console.log(func);
   if (
@@ -116,6 +121,8 @@ $(".clear").click(function () {
 
 //enter button
 $(".enter").click(function () {
+  sound.play();
+
   lastpressed = "e";
   if (
     equation.includes("/") ||
@@ -133,6 +140,8 @@ $(".enter").click(function () {
 
 //delete button
 $(".delete").click(function () {
+  sound.play();
+
   var lengthh = document.getElementById("field").value.length;
 
   document.getElementById("field").value = document
