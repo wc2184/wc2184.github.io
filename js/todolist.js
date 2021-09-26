@@ -106,7 +106,7 @@ document.addEventListener("keydown", () => {
     let textinput = document.querySelector(".typehere").value;
     if (
       document.querySelector(".typehere").value != "" &&
-      counter < 13 &&
+      counter < 12 &&
       document.querySelector(".typehere") == document.activeElement
     ) {
       let nodeAdd = document.createElement("div");
