@@ -1,3 +1,4 @@
+bks = window.localStorage; //bks
 const parent = document.querySelector("article");
 let clickedAlr = 0;
 // 0 is didnt click, 1 is clicked
@@ -77,15 +78,16 @@ bottomarea.appendChild(buttonmake);
 //go through the elements and delete those that have a line-through
 function eventdelete() {
   let par = document.querySelector("article");
-  [...par.children].forEach((e) => {
+  [...par.children].forEach((e, indecs) => {
     console.log(e + " Reading");
     console.log(e.children[0]);
     if (e.children[0].style.textDecoration == "line-through") {
       e.remove();
-      counter--;
+      bks.removeItem(indecs + 1);
     }
   });
 }
+//iterate in start parse to 15 or 12
 
 let clearAll = document.createElement("button");
 let clearText = document.createTextNode("Clear all");
@@ -97,9 +99,11 @@ clearAll.style.marginTop = "5px";
 bottomarea.appendChild(clearAll);
 clearAll.addEventListener("click", () => {
   parent.innerHTML = "";
+  counter = 0;
+  bks.clear();
 });
 
-let counter = 0;
+let counter = bks.getItem("counter");
 //typehere is the class for the input
 document.addEventListener("keydown", () => {
   if (event.key == "Enter") {
@@ -123,8 +127,24 @@ document.addEventListener("keydown", () => {
       nodeAdd.style.cursor = "pointer";
       nodeAdd.addEventListener("click", () => deleteMode(nodeAdd));
       parent.appendChild(nodeAdd);
-      listOfDivs = document.querySelectorAll(".container article div");
+
+      listOfDivs = document.querySelectorAll(".container article div"); //updates
+
       counter++;
+      bks.setItem("counter", counter);
+      //iterate through the children of article for an Inner Text of what you just typed, then get tthe inner HTML maybe? maybe just use queryselector
+
+      function pars() {
+        return Array.from(document.querySelectorAll("article div")).find(
+          (el) => el.textContent === textinput
+        );
+      }
+      let parsed = pars().innerHTML;
+      console.log(parsed);
+      console.log(counter);
+
+      bks.setItem(counter, parsed);
+
       //document.querySelector(".typehere").blur();
       document.querySelector(".typehere").value = "";
     }
@@ -143,6 +163,29 @@ document.addEventListener("keydown", () => {
   }
 });
 
-// unfocus the text after pressing enter and clear text input
+let z = 0;
+// adds all localStorage to the <article> tag with the div and shit
+for (z = 1; z <= bks.getItem("counter"); z++) {
+  let start = document.createElement("div");
+  let textsaved;
+  console.log(localStorage);
+  try {
+    textsaved = bks.getItem(z).slice(0, -4);
 
-// click something to edit, replace with a text field temporarily //nvm
+    let startText = document.createTextNode(textsaved);
+    start.appendChild(startText);
+    start.innerHTML += "<br/>";
+
+    start.style.display = "inline-block";
+    start.style.minWidth = "95%";
+    start.style.border = "1px solid black";
+    start.style.margin = "3px";
+    start.style.padding = "5px";
+    start.style.backgroundColor = "azure";
+    start.style.cursor = "pointer";
+    start.addEventListener("click", () => deleteMode(start));
+    parent.appendChild(start);
+  } catch {}
+}
+
+// start parse gets undefined, skip
