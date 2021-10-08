@@ -55,19 +55,37 @@ $(function () {
   // add any custom Javascript code above this line.
   //start here
 
-  document.getElementById("cliky").onclick = nextt;
+  document.getElementById("cliky").onclick = () => {
+    if (document.getElementById("name").value != "") nextt();
+    else {
+      alert("Please enter a name.");
+    }
+  };
+  var name;
 
-  function nextt() {
-    var name = document.getElementById("name").value;
+  stored = window.localStorage;
+  if (stored.getItem("name") != null) {
+    //if not empty, then run nextt but change the name to stored one
+    nextt(1);
+  }
+  function nextt(skip) {
+    name = document.getElementById("name").value;
+    console.log(skip);
 
-    if (name == "") {
+    if (name == "" && skip == undefined) {
       alert("Please enter a name.");
     } else {
+      //if you have a name stored in local, name = stored
+      if (stored.getItem("name") != null) {
+        name = stored.getItem("name");
+      }
       console.log(name);
       console.log(Date());
       $(".containerp").hide();
       $(".hack").show();
       $("#namefound").html(name);
+
+      stored.setItem("name", name);
       n = new Date();
       y = n.getFullYear();
       var montharray = Date().split(" ");
