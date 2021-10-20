@@ -172,9 +172,9 @@ button: go through all p and if not class motivation, display: none
       <div class="square2"></div>
       <p style="font-size: 12px; position: fixed; top: 26px; left: 50px;">Very Important info</p>
       <p style="font-size: 12px; position: fixed; top: 40px; left: 50px;">Very Important info</p>
-      <p style="position: fixed; bottom: 5px; left: 5px; background-color: lightskyblue; margin: 4px; padding: 4px; border-radius: 5px;">Stop fucking thinking.</p>
+      <button onclick="scrollup()" style="border: 1px; position: fixed; bottom: 5px; left: 5px; background-color: lightskyblue; margin: 4px; padding: 4px; border-radius: 5px;">Stop fucking thinking.</button>
       <p style="position: fixed; bottom: 5px; right: 5px; background-color: lightgreen; margin: 4px; padding: 4px; border-radius: 5px;">Site by <a target="_blank"href="http://wc2184.github.io">William Chan</a></p>
-      <p style="font-weight: 600; color: mediumpurple;" class="all quote suffering anxiety esteem">“If a problem is fixable, if a situation is such that you can do something about it, then there is no need to worry. If it's not fixable, then there is no help in worrying. <strong style="text-decoration: underline; color:mediumorchid; font-weight:bolder;">There is no benefit in worrying whatsoever.</strong>” <br>- H.H. Dalai Lama</p>
+      <p style="font-weight: 600; color: mediumpurple;" class="all quote suffering anxiety ">“If a problem is fixable, if a situation is such that you can do something about it, then there is no need to worry. If it's not fixable, then there is no help in worrying. <strong style="text-decoration: underline; color:mediumorchid; font-weight:bolder;">There is no benefit in worrying whatsoever.</strong>” <br>- H.H. Dalai Lama</p>
       <br>
       <p class="all start procrastination">
         Perfection is  cancer, just fucking wing it.
@@ -184,6 +184,7 @@ button: go through all p and if not class motivation, display: none
             do.)
         
       </p>
+      <p class="all suffering esteem">Everything will be okay- trust the soup. Disconnect from the internet for a bit.</p>
       <p class="all anxiety start procrastination" style="font-weight: bolder; color: firebrick;">
         Act immediately - Don't even allow 1 second of worry or analysis or
         planning.
@@ -196,7 +197,7 @@ button: go through all p and if not class motivation, display: none
       <p class="all suffering mindfulness esteem" >
           Be present, stop thinking about the future or past. <br>Oh? That kid bullied you at age 10 - oh you need a hug my sweet young boy - <strong>Shut the fuck up lol -</strong> no one's here to save you.
       </p>
-      <p class="all suffering esteem" >Nothing you've ever done makes you a bad person. You were the product of your environment. Be vulnerable. You are inherently worth it as a human being no matter what you think or do. </p>
+      <p class="all  esteem" >Nothing you've ever done makes you a bad person. You were the product of your environment. Be vulnerable. You are inherently worth it as a human being no matter what you think or do. </p>
       
       <p class="all anxiety suffering" style="font-weight: bolder; color: firebrick;">Make a designated/scheduled worrying time. So you don't worry now, it's not time yet. Contract all the pain into just 1 hour a day, instead of worrying 24/7.<br>(CBT Technique)</p>
       
@@ -226,9 +227,9 @@ button: go through all p and if not class motivation, display: none
       <p class="all quote  anxiety start">"Fuck you brain/mind/rational part, come and kill me, but you're not gonna control me. I'm focusing on doing a task, and solely doing a task, and you're gonna fuck off since you're wasting my life. <strong>Come and kill me</strong> if you want to stop me." <br> - Kanye West</p>
       <br>
       <p class="all work start ">When feeling tired/non-energetic: Tell your brain, energy level gauge, body, blood sugar, hormones to go fuck itself. I'm still going to do work and you're gonna be my bitch and won't dictate what I should do. I eventually will dictate you and not the other way around.</p>
-      <p class="all suffering mindfulness anxiety esteem" >Just be tired. Instead of hating yourself for being tired and unproductive today, just be tired.</p>
+      <p class="all suffering mindfulness anxiety " >Just be tired. Instead of hating yourself for being tired and unproductive today, just be tired.</p>
       
-        <p  class="all work esteem suffering">
+        <p  class="all work esteem motivation">
           <blockquote class="twitter-tweet tw-align-center d-none" data-conversation="none"><p lang="en" dir="ltr">Pick your one overwhelming desire – it’s okay to suffer over that one. <br><br>The universe is rigged in such a way that if you just want one thing, and you focus on that, you’ll get it, but everything else you gotta let go.</p>&mdash; Erik Torenberg (@eriktorenberg) <a href="https://twitter.com/eriktorenberg/status/1233598164470419457?ref_src=twsrc%5Etfw">February 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </p>
       <br>
@@ -408,7 +409,11 @@ button: go through all p and if not class motivation, display: none
         
       });
 
-      
+      const scrollup = () => {window.scroll({
+  top: 0, 
+  left: 0, 
+  behavior: 'smooth'
+});};
 
     </script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
