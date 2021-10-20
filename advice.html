@@ -12,7 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
 <title>The Last Advice </title>
@@ -100,25 +103,41 @@
 
       }
        }
+       p:hover {
+        outline:1px darkslategray solid;
+        
+         
+       }
        .toggleinvison {
          opacity: 0.3;
        }
        
+       .invisicon {
+         display: inline-block;
+         height: 5px;
+         width: 6px;
+         background-color: red;
+         visibility: hidden;
+       }
 
     </style>
     
     <div class="container">
+      
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 What's your problem?       </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><button class="dropdown-item ">Suffering</button></li>
+           <li><button class="dropdown-item " style="color: goldenrod;"><span class="fa fa-star checked"></span><div class="invisicon"></div>Motivation<div class="invisicon"></div><span class="fa fa-star checked"></span></button></li>
+           <li><button class="dropdown-item ">Suffering</button></li>
           <li><button class="dropdown-item ">Self-Esteem</button></li>
           <li><button class="dropdown-item ">Mindfulness</button></li>
           <li><button class="dropdown-item ">Work Ethic</button></li>
-          <li><button class="dropdown-item ">How to Start</button></li>
+          <li><button class="dropdown-item "><span class='fas fa-running'></span><div class="invisicon"></div>How to Start<div class="invisicon"></div><span class='fas fa-running'></span></button></li>
           <li><button class="dropdown-item ">Procrastination</button></li>
-          <li><button class="dropdown-item ">Anxiety</button></li>          <li><button class="dropdown-item ">All</button></li>
+          <li><button class="dropdown-item ">Anxiety</button></li>          
+          <li><button class="dropdown-item " style="color: steelblue;";">All</button></li>
+         
   
   
   
@@ -143,7 +162,8 @@ hide everything visibility 0
 button: go through all p and if not class motivation, display: none
 -->
 <div class="innercont">
-      <p class="top" style="font-size: larger;"><strong>STOP THINKING.</strong> <br> <p class="except" style="font-size: 15px; text-decoration: underline;">The last advice page you should ever read.</p> 
+  
+      <p class="top" style="pointer-events: none; font-size: larger;"><strong>STOP THINKING.</strong> <br> <p class="except" style=" pointer-events: none; font-size: 15px; text-decoration: underline;">The last advice page you should ever read.</p> 
     </p>
     <div class="invis" style="display: none;  text-align: center;">
       
@@ -154,10 +174,10 @@ button: go through all p and if not class motivation, display: none
       <p style="font-size: 12px; position: fixed; top: 40px; left: 50px;">Very Important info</p>
       <p style="position: fixed; bottom: 5px; left: 5px; background-color: lightskyblue; margin: 4px; padding: 4px; border-radius: 5px;">Stop fucking thinking.</p>
       <p style="position: fixed; bottom: 5px; right: 5px; background-color: lightgreen; margin: 4px; padding: 4px; border-radius: 5px;">Site by <a target="_blank"href="http://wc2184.github.io">William Chan</a></p>
-      <p style="font-weight: 600; color: mediumpurple;" class="all quote suffering anxiety">“If a problem is fixable, if a situation is such that you can do something about it, then there is no need to worry. If it's not fixable, then there is no help in worrying. <strong style="text-decoration: underline; color:mediumorchid; font-weight:bolder;">There is no benefit in worrying whatsoever.</strong>” <br>- H.H. Dalai Lama</p>
+      <p style="font-weight: 600; color: mediumpurple;" class="all quote suffering anxiety esteem">“If a problem is fixable, if a situation is such that you can do something about it, then there is no need to worry. If it's not fixable, then there is no help in worrying. <strong style="text-decoration: underline; color:mediumorchid; font-weight:bolder;">There is no benefit in worrying whatsoever.</strong>” <br>- H.H. Dalai Lama</p>
       <br>
       <p class="all start procrastination">
-        Perfection is cancer, just fucking wing it.
+        Perfection is  cancer, just fucking wing it.
         <br>
             (A C+ is literally better
             than whatever fuck extreme procrastination/overworrying/nearly failing out of college bullshit you
@@ -173,7 +193,7 @@ button: go through all p and if not class motivation, display: none
         do that, right now. <br>e.g. This essay is so hard... Okay. I'm focused on writing the first sentence. Just the first sentence. Can't fail here.
       </p>
       
-      <p class="all suffering mindfulness" >
+      <p class="all suffering mindfulness esteem" >
           Be present, stop thinking about the future or past. <br>Oh? That kid bullied you at age 10 - oh you need a hug my sweet young boy - <strong>Shut the fuck up lol -</strong> no one's here to save you.
       </p>
       <p class="all suffering esteem" >Nothing you've ever done makes you a bad person. You were the product of your environment. Be vulnerable. You are inherently worth it as a human being no matter what you think or do. </p>
@@ -181,32 +201,38 @@ button: go through all p and if not class motivation, display: none
       <p class="all anxiety suffering" style="font-weight: bolder; color: firebrick;">Make a designated/scheduled worrying time. So you don't worry now, it's not time yet. Contract all the pain into just 1 hour a day, instead of worrying 24/7.<br>(CBT Technique)</p>
       
       <p class="all suffering anxiety mindfulness" style=" font-weight: bolder;color: lightseagreen">Take the steps to do what you should do. After that, <strong>overthinking or worrying is akin to retardation</strong>, like suffering hundreds of times again and again over one thing unnecessarily.</p>
-      <p class="anxiety mindfulness start work">You can worry, and try to do work while suffering- or you can worry less, and do work while minimizing your suffering. <strong>Nothing changes about your uncontrollable external circumstances</strong> in either choice.</p>
-      <p class="all work" style="font-size: 32px; color: rebeccapurple;"><strong>Work like fucking hell. 10+ hours a day. 7 days a week. 💪</strong>  <br>
+      <p class="all anxiety mindfulness start work">You can worry, and try to do work while suffering- or you can worry less, and do work while minimizing your suffering. <strong>Nothing changes about your uncontrollable external circumstances</strong> in either choice.</p>
+
+      <p class="all motivation" style="font-weight: bold; color: black;">
+        "Again, you can’t connect the dots looking forward; you can only connect them looking backwards. <span style="font-size: x-large; font-weight: bolder; color: goldenrod;">So you have to trust that the dots will somehow connect in your future. <span style="text-decoration: underline;">You have to trust in something</span> – your gut, destiny, life, karma, whatever.</span> This approach has <span style="text-decoration: underline;">never</span> let me down, and it has made all the difference in my life."  <br>
+        - <a href="https://ladailypost.com/los-alamos-high-schools-alexandr-wang-named-to-2014-united-states-physics-team/#:~:text=The%20uncertainty%20of,understand%20the%20future.">Alexandr Wang</a>, Steve Jobs
+      </p>
+
+      <p class="all work motivation" style="font-size: 32px; color: rebeccapurple;"><strong>Work like fucking hell. 10+ hours a day. 7 days a week. 💪</strong>  <br>
       </p>
       <p class="all anxiety suffering mindfulness esteem" >"Shhh.." your mind in every moment... when walking, when using PC, when in class, even when laying in bed reading emails... Just "Shhh.." - yeah, it feels good to not have a noisy brain.</p>
-      <p class="all quote work start procrastination">There is a force within you that tries to stop you from taking action when it doesn't 'feel right, right now'. <strong>And you have to ACTIVELY ignore it.</strong>  <br> - Enlightened Reddit User 
+      <p class="all quote work start procrastination motivation">There is a force within you that tries to stop you from taking action when it doesn't 'feel right, right now'. <strong>And you have to ACTIVELY ignore it.</strong>  <br> - Enlightened Reddit User 
       </p>
       <br>
-     <p class="all quote anxiety mindfulness" style=" font-weight: bolder;color: rgb(163, 39, 136) ">"The problem is not thoughts themselves but the state of <strong>thinking without knowing that we are thinking."</strong> <br> - Sam Harris</p>
+     <p class="all quote esteem anxiety mindfulness" style=" font-weight: bolder;color: rgb(163, 39, 136) ">"The problem is not thoughts themselves but the state of <strong>thinking without knowing that we are thinking."</strong> <br> - Sam Harris</p>
 
      <br>
      
       
-      <p class="all work esteem" >Be unreasonable, unrealistic and seemingly full blown stupid and obssesed- <br>>Still try and do idiotic things like stay up 72hrs to learn BASIC- even if people think it's stupid. </p>
+      <p class="all  motivation" >Be unreasonable, unrealistic and seemingly full blown stupid and obssesed- <br>Still try and do idiotic things like stay up 72hrs to learn BASIC- even if people think it's stupid. </p>
 
       <p class="all  mindfulness" style="font-weight: bolder; color: firebrick;">So say it. So do it. You want to indulge in that cancerous action? So do it. Just do it then- since you want to so badly.</p>
       <p class="all suffering anxiety" style="font-weight: bolder;color: lightseagreen">The default assumption that "this is of importance" is why you suffer. Literally no one cares what you do or who you even are. Especially walking fucking outside.</p>
-      <p class="all quote work anxiety start">"Fuck you brain/mind/rational part, come and kill me, but you're not gonna control me. I'm focusing on doing a task, and solely doing a task, and you're gonna fuck off since you're wasting my life. <strong>Come and kill me</strong> if you want to stop me." <br> - Kanye West</p>
+      <p class="all quote  anxiety start">"Fuck you brain/mind/rational part, come and kill me, but you're not gonna control me. I'm focusing on doing a task, and solely doing a task, and you're gonna fuck off since you're wasting my life. <strong>Come and kill me</strong> if you want to stop me." <br> - Kanye West</p>
       <br>
-      <p class="all work start">When feeling tired/non-energetic: Tell your brain, energy level gauge, body, blood sugar, hormones to go fuck itself. I'm still going to do work and you're gonna be my bitch and won't dictate what I should do. I eventually will dictate you and not the other way around.</p>
+      <p class="all work start ">When feeling tired/non-energetic: Tell your brain, energy level gauge, body, blood sugar, hormones to go fuck itself. I'm still going to do work and you're gonna be my bitch and won't dictate what I should do. I eventually will dictate you and not the other way around.</p>
       <p class="all suffering mindfulness anxiety esteem" >Just be tired. Instead of hating yourself for being tired and unproductive today, just be tired.</p>
       
         <p  class="all work esteem suffering">
           <blockquote class="twitter-tweet tw-align-center d-none" data-conversation="none"><p lang="en" dir="ltr">Pick your one overwhelming desire – it’s okay to suffer over that one. <br><br>The universe is rigged in such a way that if you just want one thing, and you focus on that, you’ll get it, but everything else you gotta let go.</p>&mdash; Erik Torenberg (@eriktorenberg) <a href="https://twitter.com/eriktorenberg/status/1233598164470419457?ref_src=twsrc%5Etfw">February 29, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </p>
       <br>
-      <p class="all start work" style="font-weight: bolder; color: firebrick; font-size: large; text-decoration: underline;">Lastly - no amount of 'google searches' or 'productivity advice' or 'self-help' books will change your life. <strong>You just have to do it </strong>and stop wasting time & expecting a book to solve your issues. <br> Miracles don't happen, hard work happens.</p>
+      <p class="all start work motivation" style="font-weight: bolder; color: firebrick; font-size: large; text-decoration: underline;">Lastly - no amount of 'google searches' or 'productivity advice' or 'self-help' books will change your life. <strong>You just have to do it </strong>and stop wasting time & expecting a book to solve your issues. <br> Miracles don't happen, hard work happens.</p>
       <p class="all start procrastination" style="text-align: center; "><iframe id="reddit-embed" src="https://www.redditmedia.com/r/Frontend/comments/q6ik1h/how_much_javascript_do_i_need_to_know_before_i/hgciecb/?depth=1&amp;showmore=false&amp;embed=true&amp;showtitle=true&amp;showmedia=false" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none; " height="268" width="550" scrolling="no"></iframe></p>
     </div>
     </div>
@@ -252,10 +278,14 @@ button: go through all p and if not class motivation, display: none
       const hidePs = (e) => {
         console.log(e);
 
-        console.log(e.innerText);
+        console.log(e.innerText + " this is inner text");
+        let textofinside = e.innerText;
+        console.log('Motivation' === textofinside);
 
-        switch (e.innerText) {
+        switch (textofinside) {
+         
           case 'Work Ethic':
+            console.log(textofinside + " dan");
             ptags.forEach((p) => {
               if (p.className.includes('all')) p.style.display = "block";
 
@@ -349,6 +379,19 @@ button: go through all p and if not class motivation, display: none
               tweett.classList.add('d-none');
             })
           break;
+          case 'Motivation':
+            console.log('clickedd');
+            ptags.forEach((p) => {
+              if (p.className.includes('all')) p.style.display = "block";
+
+              invis.innerHTML = `<h2>Motivation Quotes<h2>`;
+              invis.style.display = "block";
+              if (!p.className.includes('motivation')) p.style.display = "none";
+              let tweett = document.querySelector('.twitter-tweet-rendered');
+              console.log(tweett);
+              tweett.classList.remove('d-none');
+            })
+          break;
           
 
             
@@ -368,6 +411,7 @@ button: go through all p and if not class motivation, display: none
       
 
     </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   </body>
 </html>
 <!-- roadmap: make dropdown/buttons that apply to these
