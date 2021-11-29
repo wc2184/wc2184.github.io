@@ -34,11 +34,11 @@ const core = async (val = 2399, val2 = 2500) => {
       Mint State: ${data.attributes[2].value} <br>
       Coin Metal: ${data.attributes[3].value} <br> <br></div>`;
 
-        console.log(`Type #${index}: ${data.attributes[0].value}`);
-        console.log(`Background: ${data.attributes[1].value}`);
-        console.log(`Mint State: ${data.attributes[2].value}`);
-        console.log(`Coin Metal: ${data.attributes[3].value}`);
-        return console.log(data);
+        // console.log(`Type #${index}: ${data.attributes[0].value}`);
+        // console.log(`Background: ${data.attributes[1].value}`);
+        // console.log(`Mint State: ${data.attributes[2].value}`);
+        // console.log(`Coin Metal: ${data.attributes[3].value}`);
+        // return console.log(data);
       });
   }
 };
@@ -73,11 +73,11 @@ const core2 = async (val = 2399, val2 = 2500) => {
         Mint State: ${data.attributes[2].value} <br>
         Coin Metal: ${data.attributes[3].value} <br> <br></div>`;
 
-        console.log(`Type #${index}: ${data.attributes[0].value}`);
-        console.log(`Background: ${data.attributes[1].value}`);
-        console.log(`Mint State: ${data.attributes[2].value}`);
-        console.log(`Coin Metal: ${data.attributes[3].value}`);
-        return console.log(data);
+        // console.log(`Type #${index}: ${data.attributes[0].value}`);
+        // console.log(`Background: ${data.attributes[1].value}`);
+        // console.log(`Mint State: ${data.attributes[2].value}`);
+        // console.log(`Coin Metal: ${data.attributes[3].value}`);
+        // return console.log(data);
       });
   }
 };
