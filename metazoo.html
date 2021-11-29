@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./metazoo.js" defer></script>
+    <title>Metazoo Checker</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        padding: 15px;
+      }
+      .info {
+        padding-top: 45px;
+        width: 1100px;
+        column-count: 4;
+        white-space: nowrap;
+      }
+      .abs {
+        position: absolute;
+        top: 12px;
+      }
+      .search {
+        position: absolute;
+        top: 5px;
+      }
+    </style>
+    <div
+      style="height: 750px; justify-content: center; align-items: center"
+      class="container"
+    >
+      <div class="info"></div>
+    </div>
+    <div class="search">
+      Fast Search Metazoo: Range default is 2399 - 2504 (Refresh page if
+      crashes, or click again)
+      <form class="wha" action="">
+        <input class="one" type="text" placeholder="start value" /> to
+        <input class="two" type="text" placeholder="end value" />
+        <button onclick="values()" class="enter" type="submit">
+          enter (fast search)
+        </button>
+        <button onclick="valuesslow()" class="enterslow">
+          enter (slow search but gets every value and doesn't skip)
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
