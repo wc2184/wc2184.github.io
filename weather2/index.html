@@ -11,7 +11,8 @@
     />
     <title>Weather App</title>
   </head>
-  <body class="bg-secondary bg-gradient">
+  <body class="bg-secondary
+   bg-gradient">
     <h1 class="text-light mt-5 mb- 1 text-center">Weather App</h1>
     <h4 class="text-center">By William Chan</h4>
     <div class="container mx-auto my-1">
@@ -20,7 +21,7 @@
         <input class="text-center" style="width: 280px;" type="text" name="city" placeholder="type city name here or zip" />
       </form>
         <h6 class="text-center" >Recommend to only use zipcodes. City names can be weird. <br>Like searching Brooklyn will output 'Brooklyn, Minnesota'.</h6>      
-        <div class="card bg-light mx-auto my-1" style="width: 300px; height: 600px;">
+        <div class="d-none shadow-lg card bg-light mx-auto my-1" style="width: 300px; height: 600px;">
         <img
           class="card-img-top topimg"
           src="http://placehold.jp/300x300.png"
@@ -39,6 +40,8 @@
           </p>
         </div>
       </div>
+      <button class=" d-none my-2  btn-light btn mx-auto clear">Clear</button>
+
     </div>
   </body>
   <script src="weather.js"></script>
