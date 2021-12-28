@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Weather App</title>
+  </head>
+  <body class="bg-secondary
+   bg-gradient">
+    <h1 class="text-light mt-5 mb- 1 text-center">Weather App</h1>
+    <h4 class="text-center">By William Chan</h4>
+    <div class="container mx-auto my-1">
+      <form   autocomplete="off" class="text-center" action="">
+        <label for="city"></label>
+        <input class="text-center" style="width: 280px;" type="text" name="city" placeholder="type city name here or zip" />
+      </form>
+        <h6 class="text-center" >Recommend to only use zipcodes. City names can be weird. <br>Like searching Brooklyn will output 'Brooklyn, Minnesota'.</h6>      
+        <div class="d-none shadow-lg card bg-light mx-auto my-1" style="width: 300px; height: 600px;">
+        <img
+          class="card-img-top topimg"
+          src="http://placehold.jp/300x300.png"
+          alt="Card image cap"
+        />
+        <div class="card-body bg-light py-1">
+          <p class="card-text">
+            <h1 class="cityname text-center text-info">City</h1>
+          </p>
+          <p class="card-text">
+            <h3 class="statename text-center text-secondary">State</h3>
+          </p>
+          <p class="card-text my-0">
+            <img class="icon mx-auto d-block" src=""/>
+            <h5 class="desc  text-center text-secondary">Small</h5>
+          </p>
+        </div>
+      </div>
+      <button class=" d-none my-2  btn-light btn mx-auto clear">Clear</button>
+
+    </div>
+  </body>
+  <script src="weather.js"></script>
+  <script src="app.js"></script>
+</html>
