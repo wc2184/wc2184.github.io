@@ -15,6 +15,7 @@
         https://blockchain.info/latestblock
       `
     );
+    console.log(response);
     console.log(typeof response);
     let data = await response.json();
     console.log(data);
