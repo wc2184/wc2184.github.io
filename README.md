@@ -16,10 +16,8 @@ https://wc2184.github.io/oldstuff/todolist.html
 ---
 
 
-My first ever experience with HTML and CSS and with web development.
+This repo consists of my first hobby projects with HTML and CSS and with web development in general. 
 
-Project of the Intro to Web Design class at NYU taught by Prof. Amos Bloomberg.
-
-Summer of 2021.
+Most projects made in the Fall of 2021.
 
 Index: https://wc2184.github.io
