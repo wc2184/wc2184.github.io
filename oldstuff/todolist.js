@@ -152,7 +152,8 @@ document.addEventListener("keydown", () => {
 setInterval(() => {
   bks.setItem("storage", parent.innerHTML);
 }, 1000);
-parent.innerHTML += bks.getItem("storage");
+if (!bks.getItem("storage").includes("null"))
+  parent.innerHTML += bks.getItem("storage");
 [...parent.children].forEach((e) =>
   e.addEventListener("click", () => deleteMode(e))
 );
