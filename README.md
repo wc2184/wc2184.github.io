@@ -15,7 +15,7 @@ https://wc2184.github.io/oldstuff/todolist.html
 
 ---
 
-Metazoo Card Game Stats Checker (built it for my brother, I have no idea):
+Metazoo Card Game Stats Checker (built it for my brother, I have no idea about the game):
 https://wc2184.github.io/oldstuff/metazoo.html
 
 ---
