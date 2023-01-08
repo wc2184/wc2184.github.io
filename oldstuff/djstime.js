@@ -64,7 +64,7 @@ document.querySelector(".insert").textContent = dhm(diff);
 document.querySelector(".current").textContent =
   monthNames[now.getUTCMonth()] +
   " " +
-  now.getUTCDay() +
-  nth(now.getUTCDay()) +
+  now.getUTCDate() +
+  nth(now.getUTCDate()) +
   " " +
   formatAMPM(now);
