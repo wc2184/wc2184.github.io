@@ -11,16 +11,18 @@
 
   const func = async () => {
     let response = await fetch(
-      `https://api.allorigins.win/raw?url=
-        https://blockchain.info/latestblock
-      `
+      // "https://api.allorigins.win/raw?url=https://blockchain.info/latestblock"
+      // "https://blockchain.info/latestblock"
+      "https://chain.api.btc.com/v3/block/latest/tx"
+      // "https://pokeapi.co/api/v2/pokemon/pikachu"
     );
-    console.log(response);
+    console.log(response, "hero");
     console.log(typeof response);
     let data = await response.json();
     console.log(data);
     console.log(data.height);
-    height = data.hash; //height is not the height, its the block hash now
+    // height = data.hash; //height is not the height, its the block hash now
+    height = data.data.list[0].block_hash; //2023 update for btc.com api instead
     console.log(typeof height);
     for (let i = 0; i < height.length; i++) {
       if (height.charAt(i) !== "0") break;
@@ -28,12 +30,16 @@
     }
     hashperma = height;
 
+    data.height = data.data.list[0].block_height; //2023 update for btc.com api instead
     document.querySelector(
       ".enter"
     ).innerHTML = `Block Number: <a href='https://btc.com/btc/block/${data.height}'>${data.height} (click to view on blockchain) </a> <br> Current Hash of Latest Block: 0x${height}`;
   };
 
-  await func();
+  setTimeout(async () => {
+    await func();
+    await single();
+  }, 200);
 
   const single = async () => {
     let res = await fetch(`https://blockchain.info/rawblock/${height}`);
@@ -115,5 +121,4 @@
       "<br>(And is the current solved block hash) <br>";
     document.querySelector(".gen").style.display = "none";
   };
-  await single();
 })();
