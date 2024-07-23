@@ -8,22 +8,32 @@
   let leadingofhash = 0;
 
   console.log("test: " + BigInt(parseInt("0ba21f", 16)));
+  const proxyOfTheMonth = "https://corsproxy.io/?";
 
   const func = async () => {
     let response = await fetch(
-      // "https://api.allorigins.win/raw?url=https://blockchain.info/latestblock"
-      // "https://blockchain.info/latestblock"
-      "https://chain.api.btc.com/v3/block/latest/tx"
+      proxyOfTheMonth +
+        // "https://api.allorigins.win/raw?url=https://blockchain.info/latestblock"
+        // "https://blockchain.info/latestblock"
+        // "https://chain.api.btc.com/v3/block/latest/tx"
+        "https://chain.api.btc.com/v3/block/latest/tx"
+      //https://nordicapis.com/10-free-to-use-cors-proxies/ CORS PROXIES
       // "https://pokeapi.co/api/v2/pokemon/pikachu"
+      // {
+      //   headers: {
+      //     mode: "cors",
+      //   },
+      // }
     );
     console.log(response, "hero");
     console.log(typeof response);
     let data = await response.json();
     console.log(data);
-    console.log(data.height);
+    // console.log(data.height);
     // height = data.hash; //height is not the height, its the block hash now
     height = data.data.list[0].block_hash; //2023 update for btc.com api instead
     console.log(typeof height);
+    console.log(height);
     for (let i = 0; i < height.length; i++) {
       if (height.charAt(i) !== "0") break;
       if (height.charAt(i) === "0") leadingofhash++;
@@ -38,12 +48,18 @@
 
   setTimeout(async () => {
     await func();
+    console.log("hello");
     await single();
   }, 200);
 
   const single = async () => {
-    let res = await fetch(`https://blockchain.info/rawblock/${height}`);
+    console.log("inside call", height);
+    let res = await fetch(
+      `${proxyOfTheMonth}https://chain.api.btc.com/v3/block/${height}`
+      // `${proxyOfTheMonth}https://blockchain.info/rawblock/${height}`
+    );
     let data = await res.json();
+    data = data.data; // for btc api ** MAJOR CHANGE IF CHANGE API
     console.log("This is the nBits: " + data.bits);
     bits = data.bits.toString(16);
     document.querySelector(
